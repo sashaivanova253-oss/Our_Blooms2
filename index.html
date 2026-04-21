@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Blooms® • Floral Story</title>
+    <script src="https://tailwindcss"></script>
+    <link rel="stylesheet" href="font-awesome/6.5.1/css/all.min.css">
+    <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Blooms® • Floral Story</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap');
+        
+        :root {
+            --tw-color-yellow: #facc15;
+        }
+        
+        * {
+            transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 150ms;
+        }
+        
+        .tail-container * {
+            font-family: 'Inter', system_ui, sans-serif;
+        }
+        
+        .logo-font {
+            font-family: 'Playfair Display', sans-serif;
+        }
+        
+        .hero-bg {
+            background: linear-gradient(90deg, #f5e8d3 0%, #f8f1e3 100%);
+        }
+        
+        .flower-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .flower-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.15);
+        }
+        
+        .badge {
+            animation: badge-pop 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+        }
+        
+        @keyframes badge-pop {
+            0% { transform: scale(0.8); }
+            50% { transform: scale(1.15); }
+            100% { transform: scale(1); }
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: #000;
+        }
+        
+        .nav-link:hover:after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="font-Caprasimo">
+    <!-- HEADER -->
+    <header class="border-b border-gray-100 bg-white sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+            
+            <!-- Left Logo -->
+            <div class="flex items-center gap-1">
+                <h1 class="logo-font text-3xl font-bold tracking-[-2px] text-black">Our Blooms</h1>
+                <span class="text-2xl font-bold text-black">®</span>
+            </div>
+            
+            <!-- Navigation -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium uppercase tracking-widest">
+                <a href="#" class="nav-link text-black hover:text-black">GALLERY</a>
+                <a href="#" class="nav-link text-black hover:text-black">ABOUT</a>
+                <a href="#" class="nav-link text-black hover:text-black">CONTACT</a>
+            </nav>
+            
+            <!-- Mobile Menu Button -->
+            <button onclick="toggleMobileMenu()" class="md:hidden text-2xl text-black">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden border-t bg-white px-6 py-4">
+            <div class="flex flex-col gap-4 text-sm font-medium uppercase tracking-widest">
+                <a href="#" class="py-2 text-black">GALLERY</a>
+                <a href="#" class="py-2 text-black">ABOUT</a>
+                <a href="#" class="py-2 text-black">CONTACT</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN LOGO + HERO -->
+    <div class="max-w-7xl mx-auto px-6 pt-8">
+        <div class="flex justify-center">
+            <h1 class="logo-font text-[92px] md:text-[120px] leading-none font-bold tracking-[-6px] text-black text-center">
+                Our Blooms<span class="text-7xl align-super">®</span>
+            </h1>
+        </div>
+        
+        <!-- HERO SECTION -->
+        <div class="mt-12 relative rounded-3xl overflow-hidden shadow-2xl hero-bg">
+            <div class="grid md:grid-cols-2 items-center">
+                
+               
+                    
+                    
+                </div>
+                
+                <!-- Hero Image -->
+                <div class="relative">
+                    <img src="/image/Image.jpg" 
+                         alt="Pink Peony"
+                         class="w-full h-full object-cover md:rounded-r-3xl">
+                    <!-- Soft shadow overlay on the right side of the flower -->
+                    <div class="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-[#f8f1e3]/70 md:rounded-r-3xl"></div>
+                </div>
+            </div>
+            
+            <!-- Decorative leaf elements -->
+            <div class="absolute bottom-8 left-8 hidden lg:flex items-center gap-2 text-white text-xs font-medium bg-black/70 backdrop-blur-md px-4 py-2 rounded-3xl">
+                <i class="fa-solid fa-leaf"></i>
+                Handpicked • Sustainably grown
+            </div>
+        </div>
+    </div>
+
+    <!-- WHO WE ARE SECTION -->
+    <div class="max-w-7xl mx-auto px-6 py-20">
+        <div class="text-center">
+            <span class="uppercase text-xs font-semibold tracking-[2px] text-gray-500">WHO WE ARE</span>
+            
+            <h2 class="mt-3 text-4xl md:text-5xl font-bold leading-tight text-black max-w-4xl mx-auto">
+                We're Our Blooms® and we're here to help you find your floral story.
+            </h2>
+            
+            <div class="mt-10">
+                <a href="#" 
+                   class="inline-flex items-center bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-8 py-4 rounded-2xl text-lg uppercase tracking-widest shadow-lg">
+                    <span>ABOUT US</span>
+                    <i class="fa-solid fa-arrow-right ml-3"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- FLOWER GALLERY -->
+    <div class="max-w-7xl mx-auto px-6 pb-12">
+        <div class="flex gap-4 overflow-x-auto pb-8 snap-x snap-mandatory scrollbar-hide">
+            
+            <!-- Flower 1 -->
+            <div class="flower-card min-w-[220px] snap-center">
+                <div class="bg-white rounded-3xl overflow-hidden shadow-md">
+                    <img src="/image/Image 01.jpg" 
+                         alt="Pink Peony"
+                         class="w-full h-64 object-cover">
+                </div>
+            </div>
+            
+            <!-- Flower 2 -->
+            <div class="flower-card min-w-[220px] snap-center">
+                <div class="bg-white rounded-3xl overflow-hidden shadow-md">
+                    <img src="/image/Image 02.jpg" 
+                         alt="White Tulip"
+                         class="w-full h-64 object-cover">
+                </div>
+            </div>
+            
+            <!-- Flower 3 -->
+            <div class="flower-card min-w-[220px] snap-center">
+                <div class="bg-white rounded-3xl overflow-hidden shadow-md">
+                    <img src="/image/Image 03.jpg" 
+                         alt="Pink Roses"
+                         class="w-full h-64 object-cover">
+                </div>
+            </div>
+            
+            <!-- Flower 4 -->
+            <div class="flower-card min-w-[220px] snap-center">
+                <div class="bg-white rounded-3xl overflow-hidden shadow-md">
+                    <img src="/image/Image 04.jpg" 
+                         alt="White Tulips"
+                         class="w-full h-64 object-cover">
+                </div>
+            </div>
+            
+            <!-- Flower 5 -->
+            <div class="flower-card min-w-[220px] snap-center">
+                <div class="bg-white rounded-3xl overflow-hidden shadow-md">
+                    <img src="/image/Image 05 (1).jpg" 
+                         alt="Orchid"
+                         class="w-full h-64 object-cover">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- WHAT WE DO -->
+    <div class="">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <span class="uppercase   tracking-[4px] text-5xl font-bold px-6">WHAT WE DO</span>
+            <h2 class="text-xl font-semibold mt-12 leading-tight">
+                We bring a touch of that simple magic into your world.
+            </h2>
+            
+           
+
+    </script>
+</body>
+</html>
