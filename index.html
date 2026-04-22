@@ -3,15 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Blooms® • Floral Story</title>
+    <title></title>
     <script src="https://tailwindcss"></script>
     <link rel="stylesheet" href="font-awesome/6.5.1/css/all.min.css">
-    <!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Blooms® • Floral Story</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
@@ -77,18 +71,18 @@
         }
     </style>
 </head>
-<body class="font-Caprasimo">
-    
-    <header class="border-b border-gray-100 bg-white sticky top-0 z-50">
+<body class="font-caprasimo">
+    <!-- HEADER -->
+    <header class="border-b border-gray-100 bg-white sticky top-0 z-50 ">
         <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
             
-            
+            <!-- Left Logo -->
             <div class="flex items-center gap-1">
                 <h1 class="logo-font text-3xl font-bold tracking-[-2px] text-black">Our Blooms</h1>
                 <span class="text-2xl font-bold text-black">®</span>
             </div>
             
-            
+            <!-- Navigation -->
             <nav class="hidden md:flex items-center gap-8 text-sm font-medium uppercase tracking-widest">
                 <a href="#" class="nav-link text-black hover:text-black">GALLERY</a>
                 <a href="#" class="nav-link text-black hover:text-black">ABOUT</a>
@@ -101,7 +95,7 @@
             </button>
         </div>
         
-        
+        <!-- Mobile Menu -->
         <div id="mobileMenu" class="hidden md:hidden border-t bg-white px-6 py-4">
             <div class="flex flex-col gap-4 text-sm font-medium uppercase tracking-widest">
                 <a href="#" class="py-2 text-black">GALLERY</a>
@@ -111,7 +105,7 @@
         </div>
     </header>
 
-    
+    <!-- MAIN LOGO + HERO -->
     <div class="max-w-7xl mx-auto px-6 pt-8">
         <div class="flex justify-center">
             <h1 class="logo-font text-[92px] md:text-[120px] leading-none font-bold tracking-[-6px] text-black text-center">
@@ -119,7 +113,7 @@
             </h1>
         </div>
         
-        
+        <!-- HERO SECTION -->
         <div class="mt-12 relative rounded-3xl overflow-hidden shadow-2xl hero-bg">
             <div class="grid md:grid-cols-2 items-center">
                 
@@ -128,17 +122,17 @@
                     
                 </div>
                 
-                
+                <!-- Hero Image -->
                 <div class="relative">
                     <img src="./Image.jpg" 
                          alt="Pink Peony"
                          class="w-full h-full object-cover md:rounded-r-3xl">
-                    
+                    <!-- Soft shadow overlay on the right side of the flower -->
                     <div class="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-[#f8f1e3]/70 md:rounded-r-3xl"></div>
                 </div>
             </div>
             
-        
+            <!-- Decorative leaf elements -->
             <div class="absolute bottom-8 left-8 hidden lg:flex items-center gap-2 text-white text-xs font-medium bg-black/70 backdrop-blur-md px-4 py-2 rounded-3xl">
                 <i class="fa-solid fa-leaf"></i>
                 Handpicked • Sustainably grown
@@ -146,7 +140,7 @@
         </div>
     </div>
 
-    
+    <!-- WHO WE ARE SECTION -->
     <div class="max-w-7xl mx-auto px-6 py-20">
         <div class="text-center">
             <span class="uppercase text-xs font-semibold tracking-[2px] text-gray-500">WHO WE ARE</span>
@@ -165,59 +159,59 @@
         </div>
     </div>
 
-    
-    <div class="max-w-7xl mx-auto px-6 pb-12">
-        <div class="flex gap-4 overflow-x-auto pb-8 snap-x snap-mandatory scrollbar-hide">
-            
-        
-            <div class="flower-card min-w-[220px] snap-center">
-                <div class="bg-white rounded-3xl overflow-hidden shadow-md">
-                    <img src="./Image 01.jpg" 
-                         alt="Pink Peony"
-                         class="w-full h-64 object-cover">
-                </div>
-            </div>
-            
-            
-            <div class="flower-card min-w-[220px] snap-center">
-                <div class="bg-white rounded-3xl overflow-hidden shadow-md">
-                    <img src="./Image 02.jpg" 
-                         alt="White Tulip"
-                         class="w-full h-64 object-cover">
-                </div>
-            </div>
-            
-            
-            <div class="flower-card min-w-[220px] snap-center">
-                <div class="bg-white rounded-3xl overflow-hidden shadow-md">
-                    <img src="./Image 03.jpg" 
-                         alt="Pink Roses"
-                         class="w-full h-64 object-cover">
-                </div>
-            </div>
-            
-        
-            <div class="flower-card min-w-[220px] snap-center">
-                <div class="bg-white rounded-3xl overflow-hidden shadow-md">
-                    <img src="./Image 04.jpg" 
-                         alt="White Tulips"
-                         class="w-full h-64 object-cover">
-                </div>
-            </div>
-            
-            
-            <div class="flower-card min-w-[220px] snap-center">
-                <div class="bg-white rounded-3xl overflow-hidden shadow-md">
-                    <img src="./Image 05 (1).jpg" 
-                         alt="Orchid"
-                         class="w-full h-64 object-cover">
-                </div>
-            </div>
-            
-        </div>
-    </div>
 
-    
+   
+    <div class="max-w-7xl mx-auto px-6 pb-12">
+        <div class="flex gap-5 overflow-x-auto pb-6 snap-x snap-mandatory hide-scrollbar scroll-smooth" id="flowerGallery">
+            
+            <!-- Карточка 1: Розовый пион -->
+            <div class="flower-card min-w-[260px] md:min-w-[280px] snap-start">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition">
+                    <img src="./Image 01.jpg" 
+                         alt="Розовый пион"
+                         class="w-full h-72 object-cover gallery-img">
+                </div>
+            </div>
+            
+            <!-- Карточка 2: Белый тюльпан -->
+            <div class="flower-card min-w-[260px] md:min-w-[280px] snap-start">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition">
+                    <img src="./Image 02.jpg" 
+                         alt="Белый тюльпан"
+                         class="w-full h-72 object-cover">
+                </div>
+            </div>
+            
+            <!-- Карточка 3: Розовые розы -->
+            <div class="flower-card min-w-[260px] md:min-w-[280px] snap-start">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition">
+                    <img src="./Image 03.jpg" 
+                         alt="Розовые розы"
+                         class="w-full h-72 object-cover">
+                </div>
+            </div>
+            
+            <!-- Карточка 4: Белые тюльпаны (букет) -->
+            <div class="flower-card min-w-[260px] md:min-w-[280px] snap-start">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition">
+                    <img src="./Image 04.jpg" 
+                         alt="Белые тюльпаны"
+                         class="w-full h-72 object-cover">
+                </div>
+            </div>
+            
+            <!-- Карточка 5: Орхидея -->
+            <div class="flower-card min-w-[260px] md:min-w-[280px] snap-start">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition">
+                    <img src="./Image 02.jpg" 
+                         alt="Орхидея"
+                         class="w-full h-72 object-cover">
+                </div>
+            </div>
+            </div>
+        </div>
+
+    <!-- WHAT WE DO -->
     <div class="">
         <div class="max-w-7xl mx-auto px-6 text-center">
             <span class="uppercase   tracking-[4px] text-5xl font-bold px-6">WHAT WE DO</span>
